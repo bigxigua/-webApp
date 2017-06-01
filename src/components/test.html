@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">  
+        #audio{
+            animation: cd_rotate 10s linear infinite;
+        }
+        .cd_rotate_pause{
+            -webkit-animation-play-state: paused !important;
+            -moz-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+        }
+        @keyframes cd_rotate{
+            from { transform: rotate(0); }
+            to { transform: rotate(360deg); }  
+        }
+	</style>
+</head>
+<body>
+	<audio src="../../static/music/1.mp3" controls id="audio"></audio>
+    <button id="btn">点击</button>
+    <script>
+
+        var A = document.getElementById('audio');
+        var btn = document.getElementById('btn');
+        btn.onclick=function(){
+           //  A.
+           //  //A.play(); //点击播放
+           // // A.pause(); //点击暂停
+           // console.log( A.currentTime +'当前播放的位置' )//当前播放的位置，赋值可改变位置
+           // console.log( A.startTime +'一般为0，如果为流媒体或者不从0开始的资源，则不为0 ' )//一般为0，如果为流媒体或者不从0开始的资源，则不为0 
+           // console.log( A.duration +'当前资源长度 流返回无限 ' )//当前资源长度 流返回无限 
+           A.classList.add('cd_rotate_pause')
+
+        }
+    </script>
+</body>
+</html>

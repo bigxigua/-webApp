@@ -1,0 +1,56 @@
+*{
+  	margin:0;
+  	padding:0;
+  }
+  li{
+  	list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .no_scroll{
+    overflow: hidden;
+  }
+  html,body{
+  	font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  #app{
+  	width: 100%;
+  	height: 100%;
+  }
+  .app-tab{
+  	position: fixed; 
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  }
+  .app-tab ul li{
+  	float: left;
+  	height: 10rem;
+  	width: 25%;
+  	background: gray;
+  }
+  .app-tab ul li span{
+  	font-size: 5rem;
+  	color: #f3f3f3;
+  	margin-left: 5.2rem;
+  	line-height: 7rem;
+  }
+  .app-tab ul li p{
+  	color: #f3f3f3;
+  	font-size: 2rem;
+  	text-align: center;
+  }
+  .find-search_home{
+  float: right;
+  transform:rotate(90deg);
+  margin-right: 5rem;
+}

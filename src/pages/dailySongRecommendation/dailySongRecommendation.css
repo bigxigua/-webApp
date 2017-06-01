@@ -1,0 +1,132 @@
+.daily-main{
+	margin-bottom: 10rem;
+}
+.daily_head{
+	width: 100%;
+	height: 10rem;
+	background: #d43c33;
+	text-align: center;
+}
+.daily_head .throw{
+	width: 2.4rem;
+	height: 2.4rem;
+	border-left: 0.3rem solid white;
+	border-top: 0.3rem solid white;
+	transform: rotate(-45deg);
+	margin:3.6rem 4rem;
+	position: absolute;
+}
+.daily_head>span{
+	color: white;
+	font-size: 4rem;
+	line-height: 10rem;
+}
+.daily_head>a{
+	color: white;
+	font-size: 4rem;
+	line-height: 10rem;
+	position: absolute;
+	right: -1rem;
+}
+.daily_day{
+	width: 100%;
+	height: 28rem;
+	background: url('./img/bg.jpg') no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.daily_day .today{
+	width: 14rem;
+	height: 14rem;
+	background: white;
+	margin-top: 6rem;
+	margin-left: 5rem;
+	border-radius: 1rem;
+	color: #d43c33;
+	font-size: 8rem;
+	text-align: center;
+	line-height: 14rem;
+	font-weight: bold; 
+}
+.daily_day .word{
+	font-size: 2.5rem;
+	color: white;
+	margin-top: 2rem;
+	margin-left: 5rem;
+}
+.daily_song-lists{
+	width: 100%;
+	height: 10rem;
+}
+.daily_song-lists >.icon-play2,
+.daily_song-lists >.word,
+.daily_song-lists >.icon-list2
+{
+	font-size: 4.5rem;
+	color: black;
+	line-height: 10rem;
+	margin-left: 2rem;
+	vertical-align: middle;
+}
+.daily_song-lists >.word{
+	margin-left: 3rem;
+	font-weight: bold;
+}
+.daily_song-lists >.icon-list2{
+	position: absolute;
+	right: 5rem;
+}
+.daily_song-list{
+	width: 98%;
+	height: 12rem;
+	float: right;
+	border-top: 0.1rem solid gray;
+	display: inline-block;
+}
+.daily_song-list .list-left{
+	float: left;
+}
+.list-left>p:nth-child(1){
+	font-size:4rem;
+	margin-top: 1.5rem;
+	color: black; 
+}
+.list-left>p:nth-child(2){
+	font-size:3rem; 
+	color: gray;
+	margin-top: 0.5rem;
+}
+.daily_mv,.daily_list{
+	float: right;
+	width: 6rem;
+	height: 4.5rem;
+	border: 0.1rem solid gray;
+	margin-top: 3.5rem;
+	border-radius: 1rem;
+	text-align: center;
+}
+.daily_mv{
+	position: relative;
+	left: -15rem;
+	display: none;
+}
+.daily_mv>span{
+	font-size: 3.5rem;
+	color: #d43c33;
+	line-height: 4.5rem;
+}
+.show{
+	display: block !important;
+}
+.daily_list{
+	position: absolute;
+	right: 5rem;
+}
+.daily_list>span{
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background: black;
+	margin-top: 1.7rem;
+}

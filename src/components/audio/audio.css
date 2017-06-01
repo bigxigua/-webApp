@@ -1,0 +1,258 @@
+.c-audio_main{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: white;
+	top: 0;
+	bottom: 0;
+	margin-bottom: 0;
+	z-index: 100;
+	overflow: auto;
+}
+.c-audio_head{
+	width: 100%;
+	height: 10rem;
+	overflow: hidden;
+	color: white;
+	position: relative;
+	z-index: 100;
+	border-bottom: 0.1rem solid white;
+}
+.c-audio_head .throw{
+	width: 2.4rem;
+	height: 2.4rem;
+	border-left: 0.3rem solid white;
+	border-top: 0.3rem solid white;
+	transform: rotate(-45deg);
+	margin:3.6rem 4rem;
+	float: left;
+}
+.throw_wrap{
+	display: block;
+	width: 10rem;
+	height: 10rem;
+	background: transparent;
+	float: left;
+}
+.c-audio_head .audio_title{
+	float: left;
+	width: 70%;
+	height: 100%;
+	text-align:center;
+}
+.audio_title>p:first-child{
+	font-size: 3rem;
+	font-weight: bold;
+	margin-top: 2rem;
+}
+.audio_title>p:last-child{
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+.c-audio_head .audio_share{
+	float: left;
+	font-size: 4rem;
+	margin:3rem 3rem;
+}
+.c-audio_song_main{
+	width: 100%;
+	height: 75%;
+	position: relative;
+}
+.fiter{
+	width: 100%;
+	height: 100%;
+	-webkit-filter: blur(50px);
+	-moz-filter: blur(50px);
+	-o-filter: blur(50px);
+	-ms-filter: blur(50px);
+	filter: blur(50px);
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url('./img/1.jpg') no-repeat;
+	background-size: cover;
+}
+.c-audio_cd{
+	
+}
+.cd_warp{
+	width: 45rem;
+	height: 45rem;
+	border-radius: 50%;
+	background: url('./img/singlecover.png') no-repeat;
+	background-size: contain;
+	position: relative;
+	left: 12rem;
+	top: 16rem;
+}
+.cd_warp_rotate{
+	animation: cd_rotate 10s linear infinite;
+}
+.cd_rotate_pause{
+	animation: cd_rotate 10s linear infinite;
+	-webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    animation-play-state: paused !important;
+}
+@keyframes cd_rotate{
+	from { transform: rotate(0); }
+	to { transform: rotate(360deg); }  
+}
+.cd_warp img{
+	position: absolute;
+    width: 63.4%;
+    border-radius: 50%;
+    left: 8.2rem;
+    top: 8.2rem;
+}
+.cd_icon_warp{
+	margin-top: 30rem;
+	font-size: 4rem;
+	color: white;
+}
+.cd_icon_warp span{
+	margin-left: 10rem;
+}
+.c-audio_cd {
+	position: absolute;
+	z-index: 101;
+}
+.showIrc{
+	opacity: 0;
+	transition: all 0.4s linear;
+	z-index: 99;
+}
+.control_progress{
+	width: 100%;
+	height: 30rem;
+	position: absolute;
+	bottom: 0rem;
+	z-index: 100;
+}
+.control_progress>div{
+	position: absolute;
+	margin-top: 4rem;
+}
+.time_start,.time_total{
+	color: white;
+	font-size: 3rem;
+	top: 0;
+}
+.time_start{
+	left: 3%;
+}
+.time_total{
+	right: 2.5%;
+}
+.progress_line{
+	width: 45rem;
+	height: 0.4rem;
+	background: white;
+	left: 16%;
+	margin-top: 5.5rem !important;
+}
+.fix_delay_line{
+	width: 4rem;
+	height: 0.4rem;
+	background: white;
+	margin-top: 5.5rem !important;
+	right: 15%;
+}
+.progress_icon{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: -0.3rem;
+	left: 16%;
+	z-index: 1000;
+}
+.icon_srocll{
+	width: 1rem;
+	height: 1rem;
+	background: red;
+	border-radius: 50%;
+	margin-left: 1.5rem;
+	margin-top: 1.5rem
+}
+.control_option{
+	position: relative;
+	z-index: 100;
+	color: white;
+	font-size: 7rem;
+	margin-top: 5rem;
+}
+.control_option>span{
+	margin-left: 4.4rem;
+}
+.control_option>span:nth-child(3){
+	font-size: 8rem !important
+}
+/*歌词*/
+.c-audio_lrc{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	z-index: 100;
+}
+.volume_control_wrap{
+	margin-top: 1rem;
+}
+.volume_control_wrap>div{
+	position: absolute;
+	font-size: 4.5rem;
+	color: white;
+}
+.volume_control_wrap>div:nth-child(1){
+	left: 2rem;
+}
+.volume_control_wrap>div:nth-child(2){
+	width: 75%;
+	height: 0.15rem;
+	background: white;
+	left: 12%;
+	top: 3.2rem;
+}
+.volume_control_wrap>div:nth-child(3){
+	width: 2rem;
+	height: 2rem;
+	background: white;
+	border-radius: 50%;
+	left: 40%;
+	top: 2.3rem;
+}
+.volume_control_wrap>div:nth-child(4){
+	right: 2rem;
+}
+.show{
+	opacity: 1;
+	transition: all linear, 0.4s;
+}
+
+.lrc_wrap{
+	width: 100%;
+	height: 80rem;
+	margin-top: 6rem;
+	overflow: hidden;
+}
+.lyric_text{
+	transition: all linear 0.4s;
+	margin-top: 16.5rem;
+}
+.lyric_text>p{
+	text-align: center;
+	font-size: 3.5rem;
+	height: 5.5rem;
+	color: white;
+	line-height: 5.5rem;
+	transition: all linear 0.4s;
+	color: brown;
+}
+.white{
+	color: white !important;
+}
